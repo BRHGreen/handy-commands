@@ -1,0 +1,52 @@
+move everything up a level (you must obviously be in the directory from which you want the contents to be moved): $ mv * ../
+
+show hidden files in finder: $ defaults write com.apple.finder AppleShowAllFiles TRUE
+
+list contents in order or date asc: ls -t
+list contents in order or date dec: ls -tr
+
+Read text file in terminal: 
+
+- For short files:
+
+cat <path/your_file>
+directly shows a text file in the terminal.
+
+- For longer files:
+
+less <path/your_file>
+
+- Read and edit text file in the terminal (note the `^` character in the instructions when you’re in `nano` mode is `ctrl`): 
+
+nano <path/file>
+
+- Read and write text files in terminal using VIM: 
+
+to open a file hit vi your-file-path/name 
+to start writing in your file just hit `i`
+when you're done writing hit `esc`
+to quit hit `:q` > `return`
+to save and quite hit `:wq` > `return`
+
+- write text in a file from the terminal: 
+echo "Hello you!" >> myfile.txt
+echo "this is 2nd line text" >> file.txt
+echo "last line!" >> file.txt
+
+- copy and paste a directory:
+cp -r [source folder] [destination directory]/[foldername]/
+
+open files with specific program:
+open -a "QuickTime Player" ~/Desktop/filename.mp4
+
+- copy working directory to clipboard: 
+pwd|pbcopy 
+
+- open the manual to find optional flags for commands: 
+type `man command` e.g. `man nano` shows you all of the options for the nano command. 
+hit `q` to exit the manual 
+
+- duplicate a file: `cp name-of-file name-of-duplicate`
+
+- zip files: 
+zip -r archive_name.zip folder_to_compress	

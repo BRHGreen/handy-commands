@@ -1,0 +1,3 @@
+- go to directory in finder by typing the pathname: 
+Command + Shift + g 
+

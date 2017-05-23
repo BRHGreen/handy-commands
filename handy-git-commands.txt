@@ -1,0 +1,11 @@
+-Show graph of git branch histories: 
+`git log --oneline --decorate --color --graph`
+
+- Merge PR: 
+  - Pull from the branch which you want to merge into (develop or whatever)
+  - Checkout feature branch 
+  - Merge develop (or whatever) into feature branch
+  - Fix merge conflicts 
+  - Push feature branch 
+  - Go onto github and merge your PR 
+
