@@ -27,3 +27,5 @@ apm tag makes the following shortcuts available:
 - you can let the tree-view have focus by doing ctrl-0
 
 - select current file in tree-view: `cmd-shift-\`
+
+- create a new file within the directory currently selected in the tree view: `a`
