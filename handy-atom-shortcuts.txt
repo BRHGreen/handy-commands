@@ -10,4 +10,10 @@
 apm tag makes the following shortcuts available: 
 - close tag: alt + cmd
 - close tag upon typing: </
+- toggle focus between tree and editor: ⌘ + 0
+- find open file when focused on tree view: ⌘ + t
+- find currently open tabs: ⌘ + b
+- add file in currently selected folder: a
+- 
+
 
