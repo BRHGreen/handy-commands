@@ -1,14 +1,25 @@
 - goto line: ctrl + g
+
 - insert line under current line: cmd + enter
+
 - delete current line: ctrl + shift + k
+
 - select current word: cmd + d
+
 - select current line: cmd + l
+
 - transpose characters either side of word: ctrl + t
+
 - spit pane left, right, up, or down: cmd + k, left, right up or down
+
 - foucus on different coumns: cmd + k, cmd + left, right, up or down
+
 - takes cursor to to the closing tag: ctrl + m
+
 apm tag makes the following shortcuts available: 
+
 - close tag: alt + cmd
+
 - close tag upon typing: </
 - toggle focus between tree and editor: ⌘ + 0
 - find open file when focused on tree view: ⌘ + t
@@ -17,3 +28,10 @@ apm tag makes the following shortcuts available:
 - 
 
 
+- rename selected file: just hit  `m`
+
+- you can let the tree-view have focus by doing ctrl-0
+
+- select current file in tree-view: `cmd-shift-\`
+
+- create a new file within the directory currently selected in the tree view: `a`

@@ -1,3 +1,6 @@
+- checkout specific folder
+git checkout 348ce0aa02d3738e55ac9085080028b548e3d8d3 -- path/to/the/folder/
+ 
 -Show graph of git branch histories: 
 `git log --oneline --decorate --color --graph`
 
@@ -9,3 +12,48 @@
   - Push feature branch 
   - Go onto github and merge your PR 
 
+- Use binary search to find the commit that introduced a bug
+  - git-bisect
+
+- Show changes between commits, commit and working tree, etc. It may be useful to have a look at this before merging changes.
+  - git-diff
+
+- Resetting local branch to be the same a remote branch: 
+  - git fetch origin
+  - git reset --hard origin/name-of-remote-branch
+
+
+Rename local and remote branches/remove
+
+1. Rename your local branch.
+If you are on the branch you want to rename:
+git branch -m new-name
+If you are on a different branch:
+git branch -m old-name new-name
+
+2. Delete the old-name remote branch and push the new-name local branch.
+git push origin :old-name new-name
+
+3. Reset the upstream branch for the new-name local branch.
+Switch to the branch and then:
+git push origin -u new-name
+
+Add and commit with one command. It will only add changes to git tracked files though so any new files will need to be added with `git add .`
+# make some changes
+$ git commit -a -m "Changed something"
+# make some more changes
+$ git commit -a -m "Changed something else"
+
+…then you can git push… whenevz
+
+Checkout specific file(s)/dir(s): 
+git checkout c5f567 -- file1/to/restore file2/to/restore
+
+- list branches sorted by commit date: 
+git branch --sort=-committerdate
+
+- delete branch: 
+git branch -d <branch_name>
+
+…and there are unmerged changes which you are confident of deleting:
+git branch -D <branch_name>
