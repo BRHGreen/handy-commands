@@ -10,7 +10,7 @@
 
 - transpose characters either side of word: ctrl + t
 
-- spit pane left, right, up, or down: cmd + k, left, right up or down
+- split pane left, right, up, or down: cmd + k, left, right up or down
 
 - foucus on different coumns: cmd + k, cmd + left, right, up or down
 
@@ -25,7 +25,7 @@ apm tag makes the following shortcuts available:
 - find open file when focused on tree view: ⌘ + t
 - find currently open tabs: ⌘ + b
 - add file in currently selected folder: a
-- 
+- add folder: shift + a
 
 
 - rename selected file: just hit  `m`
@@ -35,3 +35,4 @@ apm tag makes the following shortcuts available:
 - select current file in tree-view: `cmd-shift-\`
 
 - create a new file within the directory currently selected in the tree view: `a`
+
