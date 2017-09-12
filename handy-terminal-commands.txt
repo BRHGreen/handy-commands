@@ -50,3 +50,6 @@ hit `q` to exit the manual
 
 - zip files: 
 zip -r archive_name.zip folder_to_compress	
+
+- find and kill all processes on a specific port: 
+lsof -n -i4TCP:[PORT] | grep LISTEN | awk '{ print $2 }' | xargs kill
