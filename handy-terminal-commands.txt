@@ -51,7 +51,12 @@ hit `q` to exit the manual
 - zip files: 
 zip -r archive_name.zip folder_to_compress	
 
+
 ****term stuff****
 
 Configure whole word skips/whole word delete: 
 https://apple.stackexchange.com/questions/154292/iterm-going-one-word-backwards-and-forwards
+
+- find and kill all processes on a specific port: 
+lsof -n -i4TCP:[PORT] | grep LISTEN | awk '{ print $2 }' | xargs kill
+
