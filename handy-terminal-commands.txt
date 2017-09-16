@@ -50,3 +50,8 @@ hit `q` to exit the manual
 
 - zip files: 
 zip -r archive_name.zip folder_to_compress	
+
+****term stuff****
+
+Configure whole word skips/whole word delete: 
+https://apple.stackexchange.com/questions/154292/iterm-going-one-word-backwards-and-forwards
