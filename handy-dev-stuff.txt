@@ -1,0 +1,4 @@
+IFind latest version of node and update: 
+Lists all versions: nvm ls-remote
+install latest version: nvm install <LAST_VERSION>
+check that it installed correctly: node --version

@@ -1,0 +1,37 @@
+List of mongo query selectors:
+https://docs.mongodb.com/manual/reference/operator/query/#query-selectors
+
+update operators:
+https://docs.mongodb.com/manual/reference/operator/update/
+
+Start the app in terminal by typing mongo.
+
+The app will load and change the prompt will change to >.
+
+List the shell's commands available: > help.
+
+Show the list of databases: > show dbs.
+
+Show the name of the currently active database: > db.
+
+Switch to a different database: > use [name of database to switch to].
+
+Show the collections of the current database > show collections
+
+show contents of collection > db.collectionName.find()
+
+create a document and put a bunch of data into it: 
+db.documentName.insert([
+  {
+    "name": "Emma",
+    "age": 20
+  },
+
+delete collection when inside database:
+db.collectionName.drop()
+
+delete entire database:
+>use mydb
+switched to db mydb
+>db.dropDatabase()
+>{ "dropped" : "mydb", "ok" : 1 }
