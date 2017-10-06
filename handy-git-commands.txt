@@ -1,5 +1,12 @@
 - checkout specific folder
 git checkout 348ce0aa02d3738e55ac9085080028b548e3d8d3 -- path/to/the/folder/
+
+Move/rename files after they’ve been committed:
+
+git mv <path of file to be moved> <path where you would like it to be moved to>
+
+eg:
+git mv src/images/compose/Illustration_no_social.svg src/images/compose/illustration_no_social.svg
  
 -Show graph of git branch histories: 
 `git log --oneline --decorate --color --graph`
@@ -57,3 +64,7 @@ git branch -d <branch_name>
 
 …and there are unmerged changes which you are confident of deleting:
 git branch -D <branch_name>
+
+Revert a merge (git git log to find out what the hash of the merge commit is):
+git revert -m 1 6c49c8b31bcc7983ea3b460c3cab03887611e8f9 <or whatever the hash is>
+Hit this more more details on reverting merges: https://git-scm.com/blog/2010/03/02/undoing-merges.html
