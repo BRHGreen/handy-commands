@@ -1,4 +1,11 @@
 - create git repo from existing directory: 
+$ git init
+$ git add .
+$ git commit -m ‘first commit’
+*create repo in github and copy ssh/url*
+$ git remote add origin <paste ssh/url here>
+$ git remote -v
+$ git push -u origin master // here the `-u` sets upstream
 https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
 
 - checkout specific folder
@@ -61,3 +68,4 @@ git branch -d <branch_name>
 …and there are unmerged changes which you are confident of deleting:
 git branch -D <branch_name>
 
+- change commit message: `git commit --amend` and press Enter.

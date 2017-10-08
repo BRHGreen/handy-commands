@@ -1,4 +1,11 @@
 create a new database (must end with a semicolon and must not contain hyphens): e.g.: create database test_1;
+OR if you have postures running you do not need to be inside the sql shell. Navigate to `~` (I don’t know if this is actually necessary, and run `created <database name>`
+
+create user with permissions: 
+Hilary=# CREATE USER test_username_1 WITH PASSWORD 'test_password_1';
+Hilary=# GRANT ALL PRIVILEGES ON DATABASE "test_graphql_db" to test_username_1;
+
+connect to db: `\c <name of db>`
 
 show all tables: `\d`
 
