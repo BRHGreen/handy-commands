@@ -1,4 +1,11 @@
 - create git repo from existing directory: 
+$ git init
+$ git add .
+$ git commit -m ‘first commit’
+*create repo in github and copy ssh/url*
+$ git remote add origin <paste ssh/url here>
+$ git remote -v
+$ git push -u origin master // here the `-u` sets upstream
 https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
 
 - checkout specific folder
@@ -70,6 +77,10 @@ git branch -d <branch_name>
 …and there are unmerged changes which you are confident of deleting:
 git branch -D <branch_name>
 
+
 Revert a merge (git git log to find out what the hash of the merge commit is):
 git revert -m 1 6c49c8b31bcc7983ea3b460c3cab03887611e8f9 <or whatever the hash is>
 Hit this more more details on reverting merges: https://git-scm.com/blog/2010/03/02/undoing-merges.html
+
+- change commit message: `git commit --amend` and press Enter.
+
