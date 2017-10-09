@@ -1,0 +1,20 @@
+create a new database (must end with a semicolon and must not contain hyphens): e.g.: create database test_1;
+
+show all tables: `\d`
+
+\list or \l: list all databases
+
+\dt: list all tables in the current database
+
+show the contents of a specific table: `\d <name of table>
+
+show all of the content within a table:
+select * from <name-of-section>; <—-remember the semicolon
+
+Get data where fields match a particular parameter:
+select * from <name-of-tabel where <name-of-parameter>=<what-parameter-is-equal-to>;
+eg:
+select * from people where id=11;
+
+quit: \q
+

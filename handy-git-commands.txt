@@ -1,5 +1,10 @@
+- create git repo from existing directory: 
+https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+
 - checkout specific folder
 git checkout 348ce0aa02d3738e55ac9085080028b548e3d8d3 -- path/to/the/folder/
+
+Checkout previous branch: git checkout - is a shorthand for git checkout @{-1}.
 
 Move/rename files after they’ve been committed:
 

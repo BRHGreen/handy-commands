@@ -2,8 +2,9 @@ move everything up a level (you must obviously be in the directory from which yo
 
 show hidden files in finder: $ defaults write com.apple.finder AppleShowAllFiles TRUE
 
-list contents in order or date asc: ls -t
-list contents in order or date dec: ls -tr
+list contents in order or date asc: `ls -t`
+list contents in order or date dec: `ls -tr`
+list contents in single column with metadata: `ls -man <this also takes the `-t` and `-tr` arguments>`
 
 Read text file in terminal: 
 
@@ -49,10 +50,13 @@ hit `q` to exit the manual
 - duplicate a file: `cp name-of-file name-of-duplicate`
 
 - zip files: 
-zip -r archive_name.zip folder_to_compress	
+zip -r archive_name.zip folder_to_compress
 
+go back to the directory you were most recently in: `pushd`
+…or go forward: `popd`
 
-****term stuff****
+****iterm stuff****
+- hit cmd + z to re-open a tab which you have just closed. You have five seconds to perform this action by default but you can change it in prefs > profile > session
 
 Configure whole word skips/whole word delete: 
 https://apple.stackexchange.com/questions/154292/iterm-going-one-word-backwards-and-forwards
@@ -60,4 +64,8 @@ https://apple.stackexchange.com/questions/154292/iterm-going-one-word-backwards-
 - find and kill all processes on a specific port: 
 lsof -n -i4TCP:[PORT] | grep LISTEN | awk '{ print $2 }' | xargs kill
 
-- hit cmd + z to re-open a tab which you have just closed. You have five seconds to perform this action by default but you can change it in prefs > profile > session
+FURTHER READING: 
+
+YOU MAY WANT TO INSTALL `SHELL INTEGRATION` - LOOK IT UP
+
+CHECK OUT TMUX. LINK TO README: https://raw.githubusercontent.com/tmux/tmux/master/README
