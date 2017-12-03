@@ -1,0 +1,62 @@
+Check this out for key remapping: https://github.com/VSCodeVim/Vim#key-remapping
+
+Vim commands: 
+i: insert mode
+esc: normal mode
+
+**When in normal mode:**
+
+_navigation:_
+
+$: Go to end of line
+0: start of line
+w: skip to next word
+W: skip to next word, excluding punctuation
+*** 0 + w is a common combination. Start of current line then start of first word on that line ***
+b: back one word
+gg: takes you to the top of the page
+G: takes you to the bottom of the page
+<line number> + G: takes you to that line number
+{: go up a code-block
+}: go down a code-block
+
+_highlighting/removing:_
+dw: delete word in front of cursor
+D: delete all text on line in front of cursor (continuing to press `D` will delete content behind the cursor one character at a time)
+dd: delete whole line
+v: go into visual line mode. (Means you can start highlighting stuff)
+V: highlight whole line. (Then use ‘j’ and ‘k’ to move up and down)
+d: delete highlighted text
+
+
+
+_undo/redo:_
+u: undo
+ctrl + R: undo changes made with `u`
+.: repeat previous change at current cursor position
+
+Searching
+/: enter search mode.Type in what you want to search for and hit return to perform search. 
+n: find next word in search
+N: find previous word in search
+ggn: jump to first match in search
+GN: jump to last match in search
+f + <letter>: takes you to the first occurrence of that letting with in the line on which you are focused.
+;: takes you to the next occurrence of that letter
+
+
+Commands which take you into insert mode: 
+A: go to the end of current line and switch to insert mode
+a: insert mode next letter over
+o: new line below and to insert mode
+O: new line above and to insert mode
+cw: delete the letters of the word in front of the cursor and to insert mode
+C: deletes everything on the line in front of the cursor and to insert mode
+
+
+
+
+
+
+
+
