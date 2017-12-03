@@ -1,5 +1,5 @@
 create a new database (must end with a semicolon and must not contain hyphens): e.g.: create database test_1;
-OR if you have postures running you do not need to be inside the sql shell. Navigate to `~` (I don’t know if this is actually necessary, and run `created <database name>`
+OR if you have postgres running you do not need to be inside the sql shell. Navigate to `~` (I don’t know if this is actually necessary, and run `createdb <database name>`
 
 create user with permissions: 
 Hilary=# CREATE USER test_username_1 WITH PASSWORD 'test_password_1';
@@ -23,5 +23,35 @@ select * from <name-of-tabel where <name-of-parameter>=<what-parameter-is-equal-
 eg:
 select * from people where id=11;
 
+drop database (while in sql shell) You probably need to drop and recreate this if you add some fields: drop database <name of db>
+
 quit: \q
+
+you can sync your db when you connect to it by using the following code in your backend index.js. If you specify `force: true` then it will drop everything in the DB:
+models.sequelize.sync({ force: true }).then(() => {
+  app.listen(8081);
+});
+
+You should not use any camel case when name naming tables and fields in SQL because psql flattens everything to lowercase. If you have any uppercase then you’ll have to reference stuff in your psql shell using double quotes like so: select * from “nameOfField”;
+You can either name everything in your models with snake_case or you can set underscore: true in your models/index.js like so:
+```
+const sequelize = new Sequelize('slack', 'postgres', 'postgres', {
+  dialect: 'postgres',
+  define: {
+    underscored: true,
+  }
+});
+```
+See `slack-clone-client` 3_schema for an example.
+
+the following commands are from this video: https://www.youtube.com/watch?v=jNIdcrQsfYo
+create database: create <database_name>;
+create schema: create schema <database_name>;
+create table: create table <database_name>schema.table_name;
+select all fields from all tables: select * from pg_catalog.pg_tables;
+
+// this did not work for me. Think I may have missed something
+filter tables with args: select * from pg_catalog.pg_tables where schemaname != ‘information_schema’ and schemaname != ‘pg_catalog’;
+ 
+
 

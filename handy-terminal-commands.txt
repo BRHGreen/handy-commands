@@ -1,3 +1,6 @@
+create a new directory and copy all (even hidden files) to it: 
+`cp -r /copy/from /copy/to`
+
 move everything up a level (you must obviously be in the directory from which you want the contents to be moved): $ mv * ../
 
 show hidden files in finder: $ defaults write com.apple.finder AppleShowAllFiles TRUE
@@ -69,3 +72,22 @@ FURTHER READING:
 YOU MAY WANT TO INSTALL `SHELL INTEGRATION` - LOOK IT UP
 
 CHECK OUT TMUX. LINK TO README: https://raw.githubusercontent.com/tmux/tmux/master/README
+
+
+****fish key bindings****
+complete suggested command: ^ + f 
+delete to begging of word: ^ + w
+delete to end of word: alt + d
+
+
+
+
+
+
+
+
+
+
+
+
+

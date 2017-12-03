@@ -19,7 +19,7 @@ git checkout 348ce0aa02d3738e55ac9085080028b548e3d8d3 -- path/to/the/folder/
   - Checkout feature branch 
   - Merge develop (or whatever) into feature branch
   - Fix merge conflicts 
-  - Push feature branch 
+  - Push feature branch `
   - Go onto github and merge your PR 
 
 - Use binary search to find the commit that introduced a bug
