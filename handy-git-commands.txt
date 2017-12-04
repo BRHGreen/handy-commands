@@ -14,7 +14,6 @@ git checkout 348ce0aa02d3738e55ac9085080028b548e3d8d3 -- path/to/the/folder/
 Checkout previous branch: git checkout - is a shorthand for git checkout @{-1}.
 
 Move/rename files after they’ve been committed:
-
 git mv <path of file to be moved> <path where you would like it to be moved to>
 
 eg:
