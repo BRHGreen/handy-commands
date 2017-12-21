@@ -2,3 +2,50 @@ IFind latest version of node and update:
 Lists all versions: nvm ls-remote
 install latest version: nvm install <LAST_VERSION>
 check that it installed correctly: node --version
+
+when setting the state on a form using the input field you should set the value of that field on the form equal to the state which you are affecting. Like so: 
+<Input name="email" onChange={this.onChange} value={this.state.email} placeholder="Email" fluid />
+
+Run a test using jest in selected files: 
+```
+./node_modules/.bin/jest ./sections/organisations --watch --runInBand
+```
+
+Destructuring nested arrays (check `compose/handleSubmit.spec.js):
+
+```
+  const [ [ error, warning ]  ] = ownProps.addNotification.mock.calls
+
+    handleSubmit(immutableData, dispatch, ownProps);
+    expect(ownProps.addNotification.mock.calls.length).toEqual(1)
+    expect(error).toEqual("error")
+    expect(warning).toEqual(twitterCharWarning);
+    expect(ownProps.createPost.mock.calls.length).toEqual(0)
+  })
+```
+
+Vscode: 
+Change these things is settings for a nicer life: 
+
+Turn off preview mode:
+"workbench.editor.enablePreview" property to false in your settings file. Also make note of the "workbench.editor.enablePreviewFromQuickOpen" option, in case you're looking to disable this only from quick open menu.
+
+Turn on word wrap: 
+editor.action.toggleWordWrap
+
+Install sag viewer
+These settings are all available for tinkering: 
+{
+    // Show Transparency Grid
+	"svgviewer.transparencygrid": true,
+
+    // Open or not open the preview screen automatically
+    "svgviewer.enableautopreview": true,
+
+    // How to open the screen (vscode.ViewColumn)
+    "svgviewer.previewcolumn": true
+}
+
+
+
+

@@ -27,7 +27,7 @@ git mv src/images/compose/Illustration_no_social.svg src/images/compose/illustra
   - Checkout feature branch 
   - Merge develop (or whatever) into feature branch
   - Fix merge conflicts 
-  - Push feature branch 
+  - Push feature branch `
   - Go onto github and merge your PR 
 
 - Use binary search to find the commit that introduced a bug
@@ -77,9 +77,11 @@ git branch -d <branch_name>
 git branch -D <branch_name>
 
 
-Revert a merge (git git log to find out what the hash of the merge commit is):
+Revert a merge (git log to find out what the hash of the merge is):
 git revert -m 1 6c49c8b31bcc7983ea3b460c3cab03887611e8f9 <or whatever the hash is>
-Hit this more more details on reverting merges: https://git-scm.com/blog/2010/03/02/undoing-merges.html
+Hit this for more details on reverting merges: https://git-scm.com/blog/2010/03/02/undoing-merges.html
 
 - change commit message: `git commit --amend` and press Enter.
 
+Remove all local branches apart from master. It will remove unmarked changes as well. Also it will not remove the branch in which you are currently checked out:
+`git branch | grep -v "master" | xargs git branch -D`
